@@ -9,18 +9,24 @@
             background-color: #fff;
         }
 
+        .menu-container {
+            margin-top: 150px;
+        }
+
         .ejercicio1,
         .ejercicio2 {
-            margin: 40px 600px;
+            margin-bottom: 10px;
+            margin : 40px 500px;
         }
 
         a {
             background-color: rgb(0, 128, 199);
             color: white;
             display: block;
-            padding: 15px;
+            padding: 20px;
             border: 1px solid #007bff;
             border-radius: 5px;
+            text-decoration: none;
         }
 
         a:hover {
@@ -30,11 +36,13 @@
     </style>
 </head>
 <body>
-    <form class="ejercicio1">
-        <a href="{{ url_for('ejercicio1') }}">Ejercicio 1</a>
-    </form>
-    <form class="ejercicio2">
-        <a href="{{ url_for('ejercicio2') }}">Ejercicio 2</a>
-    </form>
+    <div class="menu-container">
+        <form class="ejercicio1">
+            <a href="{{ url_for('ejercicio1') }}">Ejercicio 1</a>
+        </form>
+        <form class="ejercicio2">
+            <a href="{{ url_for('ejercicio2') }}">Ejercicio 2</a>
+        </form>
+    </div>
 </body>
 </html>
