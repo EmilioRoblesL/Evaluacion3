@@ -3,10 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Menú Principal</title>
-    <link rel="stylesheet" type="text/css" href="/static/css/estilos.css">
+    <style>
+        body {
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .ejercicio1,
+        .ejercicio2 {
+            margin: 40px 600px;
+        }
+
+        a {
+            background-color: rgb(0, 128, 199);
+            color: white;
+            display: block;
+            padding: 15px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #4169E1;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <a href="{{ url_for('ejercicio1') }}">Ejercicio 1</a>
-    <a href="{{ url_for('ejercicio2') }}">Ejercicio 2</a>
+    <form class="ejercicio1">
+        <a href="{{ url_for('ejercicio1') }}">Ejercicio 1</a>
+    </form>
+    <form class="ejercicio2">
+        <a href="{{ url_for('ejercicio2') }}">Ejercicio 2</a>
+    </form>
 </body>
 </html>
